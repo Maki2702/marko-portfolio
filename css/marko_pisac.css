@@ -1,0 +1,22 @@
+@media only print {
+  body {
+    background: white;
+    color: black;
+    font-size: 22px;
+  }
+  nav, footer, header {
+    display: none;
+  }
+  section {
+    page-break-after: always;
+  }
+  h2 {
+    page-break-before: always;
+  }
+  figure img {
+    page-break-after: always;
+  }
+  iframe {
+    width: 100%;
+  }
+}
