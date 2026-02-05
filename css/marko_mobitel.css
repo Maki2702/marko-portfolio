@@ -1,124 +1,72 @@
-@media only screen and (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-    background: #be9b7b;
-    color: #3d2c18;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.08em;
-    min-height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+/* =========================
+   MOBITEL
+========================= */
+@media (max-width: 480px) {
+
+  header {
+    padding: 60px 15px 50px;
   }
 
-  header, nav, footer {
-    width: 100vw;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: #d8b47a;
+  header h1 {
+    font-size: 1.9rem;
   }
 
   nav ul {
-    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background: #d8b47a;
-    border-radius: 0 0 12px 12px;
-  }
-  nav ul li {
-    margin: 0;
-    border-bottom: 1px solid #be9b7b;
-  }
-  nav ul li:last-child {
-    border-bottom: none;
-  }
-  nav ul li a {
-    display: block;
-    padding: 14px 0;
-    color: #3d2c18;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    background: transparent;
-    transition: background 0.2s, color 0.2s;
-  }
-  nav ul li a:hover,
-  nav ul li a:focus {
-    background: #be9b7b;
-    color: #fffbe6;
   }
 
-  .container,
-  #sadrzaj,
+  main {
+    margin: 50px auto;
+    padding: 0 15px;
+  }
+
+  section,
   .kartica,
+  .project-card,
   .onama,
   .povijest,
   .zastomi,
-  .misijavizija {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 14px 0;
-    padding: 16px 5vw;
-    box-sizing: border-box;
-    background: #fffbe6;
-    border-radius: 14px;
-    box-shadow: 0 2px 14px rgba(216,180,122,0.10);
-    text-align: left;
+  .misijavizija,
+  .sekcija,
+  .zasto404,
+  .kontakt {
+    padding: 25px;
   }
 
-  h1, h2 {
-    font-size: 1.2em;
-    margin: 12px 0 10px 0;
-    text-align: center;
-    color: #3d2c18;
-  }
-  h3, h4 {
-    font-size: 1em;
-    margin: 10px 0 8px 0;
-    text-align: center;
-    color: #3d2c18;
+  .projects {
+    grid-template-columns: 1fr;
   }
 
-  img, .slika, figure img {
-    max-width: 90vw;
-    height: auto;
-    display: block;
-    margin: 0 auto 12px auto;
-    border-radius: 10px;
-    border: 2px solid #d8b47a;
-    box-shadow: 0 1px 6px rgba(216,180,122,0.11);
-  }
-
-  table {
+  .btn,
+  .kupi,
+  .btn-projekti {
     width: 100%;
-    font-size: 1em;
-    border-collapse: collapse;
-    margin: 12px 0;
-    background: #fffbe6;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  th, td {
-    padding: 8px 4px;
-    border: 1px solid #e5d3b3;
-    text-align: left;
-    font-size: 1em;
-  }
-  th {
-    background: #d8b47a;
-    color: #fffbe6;
   }
 
-  * {
-    box-sizing: border-box;
+  figure img {
+    width: 180px;
+    height: 180px;
   }
-  html, body {
-    overflow-x: hidden;
+
+  .slika {
+    width: 100%;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slika {
+    width: 80%;
   }
 }
